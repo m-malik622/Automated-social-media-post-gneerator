@@ -22,5 +22,3 @@ def Overlap_Videos(top_vid_path: str, bottom_vid_path: str, result_vid_path: str
     final_clip = clips_array([[top_clip],[bottom_clip]]).resize((720, 1280))        
     final_clip.write_videofile(result_vid_path)
     final_clip.close
-
-#Overlap_Videos(top_vid_path=r"C:\Users\malik\Documents\VSC projects\GitHub\Automated-social-media-post-gneerator\Video_Folders\top_video\What Is The Most Disturbing Movie.mp4", bottom_vid_path=r"Video_Folders\bottom_video\gta.mp4", result_vid_path=r"Video_Folders\result_video\final.mp4", start_time=10, end_time=15, have_top_vid_stretched=False)
